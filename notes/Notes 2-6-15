@@ -1,0 +1,56 @@
+# Project Description
+## Target Audience
+* Housemates who share costs of living (in college)
+* Want to monitor spending individually and as a household
+    * Compare spending in different categories
+    * View spending trends (ie. Utility bill in winter vs. other seasons)
+
+# Project Ideas
+* Cost Analyzer
+* (Ex) Spearmint
+* (Phi)ne
+* Tab
+
+# Frontend Design
+## Graphs + Graph Data (K)
+* Bar Graphs of $ over time (day/mo/yr)
+    * Stacked bar chart
+* Pie chart showing distribution across categories
+* Line chart representing total spent
+* Average utility prices
+
+## Assorted Views (N)
+* Dashboard/HomePage
+* Graph View
+* Account edit (link to Venmo if necessary)
+* Add Transation
+* View Transactions
+* Pending Transaction
+* Manage Groups
+* Group Dashboard
+
+# Accounts, Groups
+## Account Customization
+* Edit categories
+* Default graph on dashboard
+*  
+
+# Categories
+* Default set for now (un-editable)
+    * Utilities
+    * Rent
+    * Groceries
+    * Food
+    * Home
+        * Furnishings
+        * Repairs
+    * Supplies
+    * Entertainment 
+# API Endpoints
+## Authentication (T)
+## Basic Venmo Transactions (T)
+## Data Format (T)
+## Metadata Storage (T)
+
+# Cool Features
+## Bloomberg API Data (?)
