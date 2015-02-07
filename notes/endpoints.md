@@ -24,8 +24,11 @@ Gets the current user's recent transactions
 ]
 ```
 
+## POST /transaction
+Creates a transaction.
+
 # Other
-Assorted things
+Assorted things.
 
 ## GET /category
 Get the list of categories available
