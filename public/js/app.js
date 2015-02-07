@@ -9,24 +9,27 @@ phineApp.config(('$routeProvider',
 	function($routeProvider) {
 		$routeProvider.
 		when('/dashboard', {
-			templateURL : 'dashboard.html',
+			templateUrl : 'dashboard.html',
 			controller : 'dashboardCtrl'
 		}).
 		when('/friendList', {
-			templateURL : 'friendList.html',
+			templateUrl : 'friendList.html',
 			controller : 'friendListCtrl'
 		}).
 		when('/account', {
-			templateURL : 'account.html',
+			templateUrl : 'account.html',
 			controller : 'accountCtrl'
 		}).
 		when('/newTransaction', {
-			templateURL : 'newTransaction.html',
+			templateUrl : 'newTransaction.html',
 			controller : 'newTransactionCtrl'
 		}).
 		when('/transactions', {
-			templateURL : 'transactions.html',
+			templateUrl : 'transactions.html',
 			controller : 'transactionsCtrl'
 		}).
+		otherwise({
+			redirectTo : "/dashboard"
+		});
 
-	}
+	}));
