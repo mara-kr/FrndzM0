@@ -22,7 +22,8 @@
   "dependencies": {
     "express": ">= 4.11.2",
     "morgan": ">=1.5.1",
-    "underscore": "^1.7.0"
+    "underscore": "^1.7.0",
+    "compression": "^1.4.0"
   },
   "engines": {
     "node": "0.12.x"

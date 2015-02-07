@@ -1,6 +1,7 @@
 /* Basic imports */
 GLOBAL._ = require('underscore');
 var express = require('express');
+var compression = require('compression');
 var path = require('path');
 // var api = require('./routes/api.js');
 var Account = require('./routes/account.js');
@@ -10,6 +11,8 @@ var morgan = require('morgan');
 /* Setup Express App */
 var app = module.exports = express();
 app.set('port', process.env.PORT || 8000);
+app.use(compression());
+
 app.use(express.static(path.join(__dirname, 'public')));
 // Setup Access Headers
 app.use(function(req, res, next) {
