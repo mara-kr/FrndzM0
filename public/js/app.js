@@ -25,7 +25,7 @@ phineApp.config(('$routeProvider',
 			controller : 'newTransactionCtrl'
 		}).
 		when('/transactions', {
-			templateUrl : 'transactions.html',
+			templateUrl : 'partials/transactionList.html',
 			controller : 'transactionsCtrl'
 		}).
 		otherwise({

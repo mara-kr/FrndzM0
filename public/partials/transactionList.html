@@ -1,0 +1,11 @@
+<ul class="transactions list-group">
+    <li class="list-group-item" ng-repeat="transaction in transactions | orderBy:date">
+        <p>
+            <a href="#/transaction/{{transaction._id}}">{{transaction.description}}</a>
+            <span class="label label-default pull-right" ng-repeat="tag in transaction.tags">{{tag}}</span>
+        </p>
+        <p>
+            Total: {{transaction.total_amount.amount}} {{transaction.total_amount.currency}}
+        </p>
+    </li>
+</ul>

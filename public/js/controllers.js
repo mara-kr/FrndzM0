@@ -10,11 +10,10 @@ phineControllers.controller('dashboardCtrl',
 	['$scope', '$http', '$routeParams',
 	function ($scope, $http, $routeParams) {
 		$http.get(user).success(function(data) {
-			console.log('here');
 			$scope.first_name = data.first_name;
 			$scope.last_name = data.last_name;
 			$scope.display_name = data.display_name;
-			$scope.account_balence = data.account_balence;
+			$scope.account_balance = data.account_balance;
 		});
 		$http.get(transaction).success(function(transaction) {
 			$scope.transaction = transaction;
@@ -55,4 +54,3 @@ phineControllers.controller('transactionsCtrl',
 			$scope.transactions = transaction;
 		})
 	}]);
-
