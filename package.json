@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "node app.js"
-  }
+  },
   "homepage": "https://github.com/soctar/FrndzM0",
   "dependencies": {
     "express": ">= 4.11.2"
