@@ -1,7 +1,7 @@
 'use strict';
 
 var phineControllers = angular.module('phineControllers', []);
-var address = "";
+var address = "/api";
 var user = address + "/user/";
 var group = address + "/group/";
 var transaction = address + "/transaction/";
@@ -10,6 +10,7 @@ phineControllers.controller('dashboardCtrl',
 	['$scope', '$http', '$routeParams',
 	function ($scope, $http, $routeParams) {
 		$http.get(user).success(function(data) {
+			console.log('here');
 			$scope.first_name = data.first_name;
 			$scope.last_name = data.last_name;
 			$scope.display_name = data.display_name;
