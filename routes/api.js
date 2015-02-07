@@ -5,6 +5,7 @@ exports.posts = function(req, res) {
     for(var x = 0; x < 100; x++){
         posts.push({
             "id": x,
+            "name": "Post " + x,
             "summary": "This is a summary " + x,
             "rating": Math.floor(Math.random() * 5) + 1
         });
