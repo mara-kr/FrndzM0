@@ -22,7 +22,7 @@ var fakeUsers = [
     },
 ];
 
-var currUserId = "54d68e03a9cd9615dd9b4055";
+var currUserId = "54d62e2099f601a8b40362b7";
 
 exports.all = function(req, res) {
     res.json(fakeUsers);
@@ -36,5 +36,6 @@ exports.current = function(req, res) {
 exports.get = function(req, res) {
     var _id = req.params.id;
     var user = _.findWhere(fakeUsers, {"_id": _id});
+    if(user == undefined) res.status(404);
     res.json(user);
 }

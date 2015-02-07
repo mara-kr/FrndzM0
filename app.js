@@ -26,6 +26,7 @@ api.get('/transaction', Transaction.all);
 api.get('/transaction/:id', Transaction.get);
 api.get('/user', Account.current);
 api.get('/user/:id', Account.get);
+
 app.use('/api', api);
 
 app.listen(app.get('port'), function() {
