@@ -1,0 +1,25 @@
+{
+  "name": "(Phi)ne",
+  "version": "0.0.0",
+  "description": "Provides a platform for groups of individuals to charge each other with ease and analyze costs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soctar/FrndzM0.git"
+  },
+  "keywords": [
+    "venmo"
+  ],
+  "author": "Friendly Fugu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soctar/FrndzM0/issues"
+  },
+  "homepage": "https://github.com/soctar/FrndzM0",
+  "dependencies": {
+    "express": ">= 4.11.2"
+  }
+}

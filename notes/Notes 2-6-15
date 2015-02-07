@@ -33,7 +33,7 @@
 ## Account Customization
 * Edit categories
 * Default graph on dashboard
-*  
+* Keep it simple for now
 
 # Categories
 * Default set for now (un-editable)
@@ -46,9 +46,18 @@
         * Repairs
     * Supplies
     * Entertainment 
+
 # API Endpoints
-## Authentication (T)
+## Authentication/Users (T)
+* OAuth
+* Get user info
+* Get friends
+
 ## Basic Venmo Transactions (T)
+* Pay Money
+* Charge Money
+* Charge Group
+[Problem: Venmo doesn't allow response to transactions in the API]
 ## Data Format (T)
 ## Metadata Storage (T)
 
